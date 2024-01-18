@@ -46,15 +46,17 @@ function Random1(){
     if(ComputerMove==UserMove){
         // document.getElementById("p1").innerHTML="Draw";
         score.Draw +=1;
+        alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }else if(ComputerMove=="Paper"){
         score.Lost +=1;
         document.getElementById("L").innerHTML = score.Lost;
         // document.getElementById("p1").innerHTML="Computer Won";
-        // alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
+        alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }else{
         score.Win+=1;
         document.getElementById("W").innerHTML = score.Win;
         // document.getElementById("p1").innerHTML="Player Won";
+        alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }
 }
 
@@ -75,14 +77,18 @@ function Random2(){
 
     if(ComputerMove==UserMove){
         // document.getElementById("p1").innerHTML="Draw";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }else if(ComputerMove=="Scissor"){
         score.Lost +=1;
         document.getElementById("L").innerHTML = score.Lost;
         // document.getElementById("p1").innerHTML="Computer Won";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }else{
         score.Win+=1;
         document.getElementById("W").innerHTML = score.Win;
         // document.getElementById("p1").innerHTML="Player Won";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
+
     }
 }
 
@@ -103,14 +109,19 @@ function Random3(){
 
     if(ComputerMove==UserMove){
         // document.getElementById("p1").innerHTML="Draw";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
     }else if(ComputerMove=="Paper"){
         score.Win+=1;
         document.getElementById("W").innerHTML = score.Win;
         // document.getElementById("p1").innerHTML="Player Won";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
+
     }else{
         score.Lost +=1;
         document.getElementById("L").innerHTML = score.Lost;
         // document.getElementById("p1").innerHTML="Computer Won";
+                alert(`You Picked ${UserMove} Computer Picked ${ComputerMove}  Win:${score.Win} Lost : ${score.Lost} Draw: ${score.Draw}`);
+
     }
 }
 
